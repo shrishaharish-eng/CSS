@@ -1,0 +1,21 @@
+/* Typography is a way that text is arranged and presented */
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: sans-serif; /* Commonly used in most websites !! */
+    /* font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif; */
+}
+
+p {
+    /* text-decoration: underline; */
+    /* text-transform: uppercase; */
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.5; /* Increasing line height could help readability */
+    font-weight: 100; /* To set the boldness of text */
+    /* font-style: italic; */
+}
+
+/* Note: We can also link Google fonts in html/css file and make use of them */
