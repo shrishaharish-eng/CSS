@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    /* border: 2px dashed red; */
+    /* border: 2px outset red; */
+    border: 2px double red;
+    font-size: 1.5rem;
+    margin: 1.5em;
+    /* margin: 1.5em 2em 3em 4em; */ /* Short Hand */
+    /* margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    margin-left: 4em; */
+    padding: 1.5em;
+    outline: 4px solid purple;
+    /* outline-offset: 4px ; */
+    outline-offset: -10px ;
+}
+
+.circle {
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px; /*This is half of width & height. This is what converts the box to a circle !!! */
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+
+}
