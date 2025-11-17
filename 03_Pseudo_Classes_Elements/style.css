@@ -1,0 +1,77 @@
+/* PSEUDO CLASSES
+
+Pseudo-classes enable you to target an element when it's in a particular state, as if you had added a class for that state to the DOM.
+
+*/
+article p:first-child {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+p:hover {
+    color: blue;
+}
+
+article p:last-child{
+    background-color: orange;
+}
+
+/* PSEUDO ELEMENTS
+
+Pseudo-elements act as if you had added a whole new element to the DOM, and enable you to style that. 
+
+*/
+
+
+/* Gives a red background color for text selected by mouse */
+::selection {
+    background-color: red;
+}
+
+
+/* Targets first letter of each paragraph inside article element */
+article p::first-letter{
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 2rem;
+}
+
+/* Combining Pseude class & Pseudo element
+
+Ex. to make the first line of the first paragraph bold you could chain the :first-child and ::first-line selectors together.
+
+article p:first-child::first-line {
+  font-size: 120%;
+  font-weight: bold;
+}
+*/
+
+/* GENERATING CONTENT WITH ::before & ::after 
+
+The ::before and ::after pseudo-elements enable you to insert content into the document using CSS.
+
+*/
+
+
+.box::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+
+.box::after {
+  content: " ➥";
+}

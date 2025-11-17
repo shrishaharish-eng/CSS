@@ -1,0 +1,41 @@
+
+/* Descendent Combinator
+Ex. Targetting the <p> element which is inside an element with a class of .box. */
+.box p {
+  color: red;
+}
+
+/* Child Combinator
+Ex. only those <li> elements which are direct children of a <ul> */
+ul > li {
+  border-top: 5px solid red;
+}
+
+/* Next Sibling Combinator
+Ex. select any paragraph that shares a parent element with an <h1>, and immediately follows that <h1> */
+
+h1 + p {
+  font-weight: bold;
+  background-color: #333333;
+  color: white;
+  padding: 0.5em;
+}
+
+/* Subsequent sibling combinator
+Ex. we are selecting all <p> elements that come after the <h1> under same parent, and even though there is a <div> in the document as well, the <p> that comes after it is selected. */
+
+h1 ~ p {
+  font-weight: bold;
+  background-color: #333333;
+  color: white;
+  padding: 0.5em;
+}
+
+
+/* Combining combinators with selectors
+
+Ex.to select list items with a class of a which are direct children of a <ul>
+
+ul > li[class="a"] {
+}
+*/
